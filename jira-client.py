@@ -9,7 +9,9 @@ class JiraClient(object):
     __jira_options = {'server': 'https://jira.kaaproject.org'}
     __jira = None
 
-    def __init__(self, login="", password="", jira_server="https://jira.kaaproject.org"):
+    def __init__(self, login="", password="", jira_server=None):
+        if jira_server is not None:
+            self.__jira_options['server'] = jira_server
         logging.basicConfig(
             level=logging.INFO,
             format='%(asctime)s %(message)s'

@@ -1,0 +1,7 @@
+.idea
+*.pyc
+*.pyo
+
+.gradle
+build/
+readme*.txt
