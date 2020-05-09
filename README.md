@@ -1,6 +1,7 @@
 # jira-client
 
 Script to check jira issue
+https://jira.readthedocs.io/en/master/examples.html#issues 
 
 ## Prerequisites
 ```
